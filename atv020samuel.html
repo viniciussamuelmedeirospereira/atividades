@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        fieldset{
+        width: 350px;
+       
+        }
+        label{
+        font-weight: arial;
+        width: 400px;
+        margin: 10px auto;
+        }
+        input{
+        margin-bottom: 5px;
+        }
+  
+        
+    </style>
+</head>
+</head>
+<body>
+    
+    <label for = "name">Nome</label>
+    <input type="text" id="name" class="name"> 
+    <br>
+
+    <label for = "idade">Idade</label>
+    <input type="number" id="number" class="number">
+    <br>
+
+    <label for = "Senha">Senha</label>
+    <input type="password" id="senha" class="senha">
+    <br>
+
+    <form action="">
+    <fieldset>
+    <legend>Sexo</legend>
+    <input type="radio" id="Masculino" name="M">
+    <label for="M">M</label>
+        
+    <input type="radio" id="Femino" name="F">
+    <label for="F">F</label>
+    </fieldset>
+
+    <fieldset>
+    <legend>Estado Civil</legend>
+    <input type="radio" id="Macarrão" name="Macarrão">
+    <label for="Macarrão">Macarrão</label>
+    <br>
+        
+    <input type="radio" id="Frango" name="Frango">
+    <label for="Frango">Frango</label>
+    </fieldset>
+    </form>
+
+    
+    <label for = "cor">Selecione seu arquivo: <input type="file" id="arquivo" name="arquivo"></label>
+    <br>
+    <label for = "cor">Selecione uma cor:  <input type="color" id="color" name="cor"></label>
+    <br>
+    <label for = "datanasc">Selecione uma Data: </label><input type="date" id="datanasc" class="datanas">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" class="email" name="email">
+    <br>
+    <label for = "num">numero: <input type="number" id="number" name="number"></label>
+    <br>
+    <label for = "vol">volume</label>
+    <input type="range" id="vol" name="volume">
+    <br>
+    <label for = "data">Selecione uma Data: </label><input type="datetime" id="datanasc" class="datanas">
+    <br>
+    <label for = "datahoralocal">Selecione uma Data, hora e local: </label><input type="datetime-local" id="datanasc" class="datanas">
+    <br>
+    <label for = "horario">Selecione horario </label><input type="time" id="datanasc" class="datanas">
+    <br>
+    <label for = "semana">Selecione uma semana </label><input type="week" id="smena" class="semana">
+    <br>
+    <label for = "mes">mês</label><input type="month" id="datanasc" class="datanas">
+    <br>
+    <textarea name="mensagem" id="mensagem" rows="5" cols="40"
+              placeholder=" Caixa de texte com 5 linhas e 30 colunas"></textarea>
+    <br>
+
+    <select name="cor" id="cor"> 
+    <option value="vermelho">vermelho</option>
+    </select>
+    <label for = "url"> URL:  </label><input type = "url" class="url">
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Resetar">
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <style>
+        fieldset{
+        width: 400px;
+        margin: 10px auto;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            margin-bottom: 5px;
+        }
+        textarea{
+            width: 250px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+    <fieldset>
+
+    <legend> Your Details</legend>
+
+    <label for = "name">1. Nome</label>
+    <input type="text" id="name" class="name" placeholder="First and last name">
+     <br>
+    <label for = "email">2. E-mail</label>
+    <input type="email" id="email" class="email" placeholder="example@domain.com">
+    <br>    
+    <label for = "phone">3. Phone</label>
+    <input type="tel" id="contato" class="contato" placeholder="En. +447500000000"> 
+
+
+    </fieldset>
+  
+
+
+        <fieldset>
+        <legend>Delivery address</legend>
+        <label for="mensagem">1. Address</label>
+        <textarea name="mensagem" id="mensagem" rows="5" cols="40"></textarea>
+        
+        <br>
+
+        <label for="post">2. Post code</label>
+        <input type="number" name="post" >
+        
+        <br>
+
+        <label for="post">3. Country</label>
+        <input type="mensagem" name="mensagem" >
+        </fieldset>
+
+        <fieldset>
+        <legend>Card Details</legend>    
+        <fieldset>
+        <legend>Card Type</legend>
+        <ol>
+        <li><input type="radio" id="Visa" name="pagamento">
+        <label for="Visa">Visa</label></li>
+        
+        <li><input type="radio" id="AmEx" name="pagamento">
+        <label for="AmEx">AmEx</label></li>
+
+        <li>
+        <input type="radio" id="MasterCard" name="pagamento">
+        <label for="MasterCard">Mastercard</label>
+        </li>
+        </ol>
+        </fieldset>
+
+        <label for="post">2. Card Number</label>
+        <input type="number" name="Card" >
+        <br>
+
+        <label for="post">3. Security code  </label>
+        <input type="number" name="security" >
+        <br>
+
+        <label for="post">3. Name on Card  </label>
+        <input type="text" name="nomeoncard"  placeholder="Exact name as on the card">
+        <br>
+
+        <fieldset>
+        <input type="submit" value="Buy it!">
+        </fieldset>
+        </fieldset>
+
+        </fieldset>
+    </form>
+</body>
+</html>

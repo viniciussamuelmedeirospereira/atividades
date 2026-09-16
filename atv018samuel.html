@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Elaborado</title>
+
+    <style>
+
+        body{
+        width: 700px;
+        margin: 60px auto;
+        padding: 40px;
+       color: white;
+        background-image: url('fundo.png');
+      background-repeat: no-repeat;
+       background-attachment: fixed;
+	        background-size: cover;
+
+        }
+        
+        input{
+            margin-top: 10px;
+            row-gap: 15px;
+             }
+
+
+        fieldset{
+            gap: 70px;
+            max-width: 550px;
+            padding: 15px;
+            margin-top: 10px;
+            }
+        label{
+            font-weight: bold;
+            margin-top: 6px;
+             }
+
+        
+
+                body{
+            width: 700px;
+            margin: 60px auto;
+            padding: 40px;
+            color: white;
+            background-image: url('fundo.png');
+            background-repeat: no-repeat;
+	        background-attachment: fixed;
+	        background-size: cover;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Forma de Contato</h1>
+    
+    <p>Por Favor, Insira suas Informações e Enviaremos sua Mensagem!</p>
+
+    <form action="">
+        
+        <label for="name">Seu Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Nome...">
+        <input type="text" name="last" id="last" placeholder="Sobrenome...">
+
+        <br>
+        <label for="email">Seu Email:</label>
+        <input type="email" class="email" id="email" placeholder="Ex: e-mail@gmail.com">
+
+        <br>
+        <label for="contato">Telefone</label>
+        <input type="tel" name="contato" class="contato" id="cd-pais" placeholder="Cd. País">
+        <input type="tel" name="contato" class="contato" id="ddd" placeholder="DDD">
+        <input type="tel" name="contato" class="contato" id="tel" placeholder="Número">
+
+        <br><br>
+        <label for="ass">Assunto:</label>
+            <select name="ass" id="ass">
+                <option value="" disabled selected>Selecione Uma Opção</option>
+                <option value="pr">Profissional</option>
+                <option value="pe">Pessoal</option>         
+                <option value="oy">Outro</option>                    
+            </select>
+
+        <br><br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" rows="5" cols="40"
+              placeholder="Digite sua Mensagem Aqui..."></textarea>
+
+        <br>
+        <label for="Cap">Verificação:</label>
+        <input type="checkbox" id="Cap" class="Cap" name="funcao">
+
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+
+</html>
