@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Dados</title>
+
+    <style>
+        @layer{
+            *{
+              margin:0%
+            }
+         body{
+            height: 100dvh;
+         }
+        }
+
+
+    form{
+        margin-left: 40%;
+    }
+
+
+    body{
+    background: linear-gradient(blue, rgb(45, 90, 45), rgb(13, 24, 13));
+    background-repeat: no-repeat;
+            
+    }
+    
+    input {
+    border-radius: 60px; 
+    border: 5px;
+    padding: 8px 12px;
+    background-color: rgb(22, 56, 70);
+    color: white;
+    width: 20%;
+    
+}
+
+
+    h1{
+    
+    color: white;
+    }
+
+    label{
+     color:white;
+    }
+
+    select{
+    border-radius: 90px; 
+    width: 22%;
+    border: 1px solid;
+    padding: 8px 12px;
+    background-color: rgb(22, 56, 70);
+    color:white;
+    border: 5px 
+
+    }
+
+    button {
+    width: 22%;
+    height: 45px;
+    background-color: #eab000;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    }
+
+    img {
+    display: block;
+    margin-left: center;
+    margin-right: center;
+     width: 7%;
+    margin-left: 10%;
+    }
+
+
+    </style>
+</head>
+<body>
+    
+   
+    <form action="https://sheetdb.io/api/v1/2d358wh4byvu5"
+          method="post">
+          <br><br><br><br><br><br><br><br><br>
+          <img src="detective.png">
+          <h1>On-Site Enquirtes Form</h1>
+          <BR><BR><BR>
+
+          <label for="Nome">Nome</label>
+          <br>
+          <input type="text" name="data[nome]" id="nome" >
+          <br><br>
+
+          <label for="Sbnome">Sobrenome</label>
+          <br>
+          <input type="text" name="data[sbnome]" id="sbnome" >
+          <br><br>
+
+          <label for="Cidade">Cidade</label>
+          <br>
+          <input type="text" name="data[cidade]" id="cidade" >
+          <br><br>
+
+        <label for="est">Selecione o Estado</label>
+        <br>
+        <select name="data[estado]">
+        <option value="" disabled selected>Select</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>         
+        <option value="SP">São Paulo</option>                    
+        </select>
+        <br><br>
+    
+
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+  
+    
+</body>
+</html>
